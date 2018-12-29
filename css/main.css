@@ -3,6 +3,10 @@ a:hover {
     text-decoration: underline;
     text-decoration-color: green;
 }
+hr {
+    height: 24px;
+    background-color: green;
+}
 #navbar {
     text-align: center;
     font-size: 32px;
