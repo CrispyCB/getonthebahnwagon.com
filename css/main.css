@@ -1,3 +1,7 @@
+.link {
+    color: green;
+    text-decoration: none;
+}
 .text {
     font-family: 'Staatliches', cursive;
     color: black;
