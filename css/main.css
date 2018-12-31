@@ -1,3 +1,7 @@
+#contact-info h2 {
+    display: inline-block;
+    width: 49%;
+}
 .career-item {
     display: inline-block;
     width: 33%;
