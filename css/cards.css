@@ -2,10 +2,15 @@
 p {
     font-family: 'Open Sans', sans-serif;
 }
-.card {
+.card-wrapper .card {
     border-radius: 1%;
     margin: 2%;
     max-width: 290px;
+    box-shadow: 5px 5px 2px grey;
+}
+.card {
+    border-radius: 1%;
+    margin: 2%;
     box-shadow: 5px 5px 2px grey;
 }
 .card-text {
