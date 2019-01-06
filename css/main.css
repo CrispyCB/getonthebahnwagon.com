@@ -6,12 +6,12 @@ button {
     display: inline-block;
     width: 49%;
 }
+.card {
+    display: inline-block;
+}
 .card-link {
     display: inline-block;
     width: 49%;
-}
-.card {
-    display: inline-block;
 }
 .career-item {
     display: inline-block;
