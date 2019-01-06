@@ -1,6 +1,17 @@
+button {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
 #contact-info h2 {
     display: inline-block;
     width: 49%;
+}
+.card-link {
+    display: inline-block;
+    width: 49%;
+}
+.card-wrapper {
+    display: inline;
 }
 .career-item {
     display: inline-block;
