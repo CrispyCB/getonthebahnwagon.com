@@ -10,8 +10,8 @@ button {
     display: inline-block;
     width: 49%;
 }
-.card-wrapper {
-    display: inline;
+.card {
+    display: inline-block;
 }
 .career-item {
     display: inline-block;
@@ -36,6 +36,10 @@ button {
 }
 .-margin {
     margin: 15%;
+}
+.media img {
+    height: 244px;
+    width: 290px;
 }
 .text {
     font-family: 'Staatliches', cursive;
