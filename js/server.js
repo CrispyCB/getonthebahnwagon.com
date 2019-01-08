@@ -1,21 +1,30 @@
-let Hapi = require('hapi');
+const hapi = require('hapi');
+const inert = require('inert');
+const path = require('path');
 
-let server = new Hapi.Server({  
+let server = new hapi.Server({  
     host: 'localhost',
     port: 3000
   })
 
-  async function start () {  
-    // start your server
-    try {
-      await server.start()
-    } catch (err) {
-      console.error(err)
-      process.exit(1)
-    }
-  
-    console.log('Server running at: ', server.info.uri)
-  }
-  
-  start()  
-  
+//starts server
+const start = async () => {
+
+    await server.register(require('inert'));
+
+    //sets root route
+    server.route({
+        method: 'GET',
+        path: '/about',
+        handler: function (request, h) {
+
+            return h.file('../about/about.html');
+        }
+    });
+
+    await server.start();
+
+    console.log('Server running at:', server.info.uri);
+};
+
+start();
