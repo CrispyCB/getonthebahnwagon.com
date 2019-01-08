@@ -1,8 +1,6 @@
-const hapi = require('hapi');
-const inert = require('inert');
-const path = require('path');
+let Hapi = require('hapi');
 
-let server = new hapi.Server({  
+let server = new Hapi.Server({  
     host: 'localhost',
     port: 3000
   })
@@ -20,3 +18,4 @@ let server = new hapi.Server({
   }
   
   start()  
+  
