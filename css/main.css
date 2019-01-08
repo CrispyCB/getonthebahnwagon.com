@@ -1,18 +1,10 @@
-button {
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+
 #contact-info h2 {
     display: inline-block;
     width: 49%;
 }
-.card {
-    display: inline-block;
-}
-.card-link {
-    display: inline-block;
-    width: 49%;
-}
+
 .career-item {
     display: inline-block;
     width: 33%;
@@ -31,6 +23,11 @@ button {
     width: 49%;
 }
 .link {
+    color: green;
+    text-decoration: none;
+}
+.project-link {
+    font-family: 'Staatliches', cursive;
     color: green;
     text-decoration: none;
 }

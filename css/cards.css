@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Staatliches', cursive;
 }
 .card-wrapper .card {
     border-radius: 1%;
@@ -9,9 +10,14 @@ p {
     box-shadow: 5px 5px 2px grey;
 }
 .card {
+    display: inline-block;
     border-radius: 1%;
     margin: 2%;
     box-shadow: 5px 5px 2px grey;
+}
+.card-link {
+    display: inline-block;
+    width: 49%;
 }
 .card-text {
     padding: 2%;
