@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
+#navbar a {
+    padding-left: .5em;
+}
 #navbar a:hover {
     text-decoration: underline;
     text-decoration-color: green;
