@@ -8,4 +8,6 @@ app.use('/stylesheets', express.static(path.join( __dirname, 'stylesheets')));
 
 app.get('/about', (req, res) => res.render('about'))
 
+app.get('/career', (req, res) => res.render('career'))
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
