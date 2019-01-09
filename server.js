@@ -7,6 +7,7 @@ app.set('view engine', 'pug')
 app.use('/stylesheets', express.static(path.join( __dirname, 'stylesheets')));
 
 app.get('/about', (req, res) => res.render('about'))
+app.get('/about/communicator', (req, res) => res.render('communicator'))
 
 app.get('/career', (req, res) => res.render('career'))
 
