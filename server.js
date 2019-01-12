@@ -11,4 +11,6 @@ app.get('/about/communicator', (req, res) => res.render('communicator'))
 
 app.get('/career', (req, res) => res.render('career'))
 
+app.get('/documentation', (req, res) => res.render('documentation'))
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
