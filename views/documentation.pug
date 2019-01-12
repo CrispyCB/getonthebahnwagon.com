@@ -1,32 +1,27 @@
 doctype html
 html
-head
-    title My Documenation
-    link(rel="stylesheet", href="/static/stylesheets/navbar.css")
-    link(rel="stylesheet" href="/static/stylesheets/main.css")
-    link(rel="stylesheet" href="/static/stylesheets/cards.css")
-body
-    include header.pug
-    hr
-    div(class="doc-card-wrapper -center")
-    div(class="card")
-        div(class="doc-media")
-            a(href="/static/pdfs/Getting Started With Gmail.pdf")
-                img(src="/static/images/GMail-Image.png" alt="")
-            div(class="title")
-                h4(class="text -center") Getting Started With Gmail
-            div(class="card-text")
-                p(class="-center") A simple getting-started guide for Gmail.
-    div(class="card")
-        div(class="doc-media")
-            a(href="/static/pdfs/Installing an IRC client on Ubuntu 16.04.pdf")
-                img(src="/static/images/Installing IRC Client Image.png" alt="")
-            div(class="title")
-                h4(class="text -center") Installing IRC On Ubuntu
-            div(class="card-text")
-                p(class="-center") An install guide for HexChat on Ubuntu Linux.
-                
-            
-        
-
-        
+    head
+        title My Documenation
+        link(rel="stylesheet", href="/static/stylesheets/navbar.css")
+        link(rel="stylesheet" href="/static/stylesheets/main.css")
+        link(rel="stylesheet" href="/static/stylesheets/cards.css")
+    body
+        include header.pug
+        hr
+        div(class="doc-card-wrapper -center")
+        div(class="card")
+            div(class="doc-media")
+                a(href="/static/pdfs/Getting Started With Gmail.pdf")
+                    img(src="/static/images/GMail-Image.png" alt="")
+                div(class="title")
+                    h4(class="text -center") Getting Started With Gmail
+                div(class="card-text")
+                    p(class="-center") A simple getting-started guide for Gmail.
+        div(class="card")
+            div(class="doc-media")
+                a(href="/static/pdfs/Installing an IRC client on Ubuntu 16.04.pdf")
+                    img(src="/static/images/Installing IRC Client Image.png" alt="")
+                div(class="title")
+                    h4(class="text -center") Installing IRC On Ubuntu
+                div(class="card-text")
+                    p(class="-center") An install guide for HexChat on Ubuntu Linux.
