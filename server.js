@@ -8,6 +8,7 @@ app.use('/static', express.static(path.join( __dirname, 'static')));
 
 app.get('/about', (req, res) => res.render('about'))
 app.get('/about/communicator', (req, res) => res.render('communicator'))
+app.get('/about/programmer', (req, res) => res.render('programmer'))
 
 app.get('/career', (req, res) => res.render('career'))
 
