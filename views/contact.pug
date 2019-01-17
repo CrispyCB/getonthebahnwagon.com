@@ -4,18 +4,24 @@ html
         title Contact Me
         link(rel="stylesheet", href="/static/stylesheets/navbar.css")
         link(rel="stylesheet" href="/static/stylesheets/main.css")
+        link(rel="stylesheet" href="/static/stylesheets/form.css")
         link(link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous")
     body
     include header.pug
     hr
-    div(id="contact-info" class="-center")
-        h2(class="text") cebahnweg@gmail.com
-        h2(class="text") 717-554-1213
-
-    <div id="social-media">
-        div(class="icon -center")
-            a(href="https://www.linkedin.com/in/christian-bahnweg/" target="_blank")
-                i(class="fab fa-linkedin-in fa-10x")
-        div(class="icon -center")
-            a(href="https://github.com/CrispyCB" target="_blank")
-                i(class="fab fa-github-alt fa-10x")
+    form(action="https://formspree.io/cebahnweg@gmail.com" method="POST")
+        div(id="name-item")
+            label(for="name") Name:
+        div(id="name-text")
+            input(type="text" id="name" name="user_name")
+        div(id="mail-item")
+            label(for="mail") Email:
+        div(id="name-text")
+            input(type="email" id="mail" name="user_mail")
+        div(id="msg-item")
+            label(for="msg") Message:
+        div(id="msg-text")
+            textarea(id="msg" name="user_message")
+        div(id="submit-button")
+            button(type="submit" value="Send") Say Hi!
+    
