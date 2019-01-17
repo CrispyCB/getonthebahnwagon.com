@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+footer {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+}
+
 #contact-info h2 {
     display: inline-block;
     width: 49%;
