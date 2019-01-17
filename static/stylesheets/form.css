@@ -4,7 +4,6 @@ button {
     background: none;
     background-color: green;
     height: 3em;
-    box-shadow: 5px 5px 2px grey;
     color: white;
     margin: 1%;
 }
