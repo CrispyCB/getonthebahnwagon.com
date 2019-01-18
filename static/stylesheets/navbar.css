@@ -5,11 +5,11 @@
 }
 #navbar a:hover {
     text-decoration: underline;
-    text-decoration-color: green;
+    text-decoration-color: #1d2951;
 }
 hr {
     height: 24px;
-    background-color: green;
+    background-color: #1d2951;
 }
 #navbar {
     text-align: center;

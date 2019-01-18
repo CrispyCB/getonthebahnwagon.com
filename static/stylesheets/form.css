@@ -2,7 +2,7 @@ button {
     border: 0px;
     border-radius: 5px;
     background: none;
-    background-color: green;
+    background-color: #1d2951;
     height: 3em;
     color: white;
     margin: 1%;
@@ -18,7 +18,7 @@ input, textarea {
     width: 100%;
     background-color:whitesmoke;
     border-style:solid;
-    border-color:green; 
+    border-color:#1d2951; 
     border-radius: 5px;
     border-width: 1px;
 }
