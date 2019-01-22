@@ -23,11 +23,19 @@
 
 // app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 const Hapi = require('hapi');
+const Inert = require('inert');
 const Vision = require('vision');
 const Pug = require('pug');
 const Path = require('path');
 
-const server = Hapi.Server({ port: 3000 });
+const server = Hapi.Server({
+    port: 3000,
+    routes: {
+        files: {
+            relativeTo: Path.join(__dirname, 'static/')
+        }
+    }
+});
 
 const rootHandler = (request, h) => {
 
@@ -39,6 +47,7 @@ const rootHandler = (request, h) => {
 
 const provision = async () => {
 
+    await server.register(Inert);
     await server.register(Vision);
 
     server.views({
@@ -55,9 +64,29 @@ const provision = async () => {
 
     server.route({
         method: 'GET',
-        path: '/',
+        path: '/static/{param*}',
+        handler: {
+            directory: {
+                path: '.',
+                redirectToSlash: true,
+                index: true,
+            }
+        }
+    });
+
+    server.route({
+        method: 'GET',
+        path: '/about',
         handler: {
             view: 'about'
+        }
+    });
+
+    server.route({
+        method: 'GET',
+        path: '/',
+        handler: (request, h)=>{
+            return h.redirect('/about');
         }
     });
 
