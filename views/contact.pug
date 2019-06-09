@@ -10,18 +10,18 @@ html
     include header.pug
     hr
     form(action="https://formspree.io/cebahnweg@gmail.com" method="POST")
-        div(id="name-item")
+        section(id="name-item")
             label(for="name") Name
-        div(id="name-text")
+        section(id="name-text")
             input(type="text" id="name" name="Name")
-        div(id="mail-item")
+        section(id="mail-item")
             label(for="mail") Email
-        div(id="name-text")
+        section(id="name-text")
             input(type="email" id="mail" name="Email")
-        div(id="msg-item")
+        section(id="msg-item")
             label(for="msg") Message
-        div(id="msg-text")
+        section(id="msg-text")
             textarea(id="msg" name="Message")
-        div(id="submit-button")
+        section(id="submit-button")
             button(type="submit" value="Send") Say Hi!
     
